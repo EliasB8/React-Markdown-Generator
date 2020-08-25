@@ -1,6 +1,11 @@
 import React from "react";
 import marked from "marked";
 
+marked.setOptions({
+  gfm: true,
+  breaks: true
+});
+
 function Previewer(props) {
   return (
     <div className="preview-container">
