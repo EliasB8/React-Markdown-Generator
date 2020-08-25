@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* MARKDOWN PREVIEW STYLE */
+pre {
+  background: white;
+  padding: 8px;
+  margin: 5px;
+  font-weight: bold;
+  max-width: 90%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  background: white;
+  font-weight: bold;
+  padding: 2px;
+}
+
+h1 {
+  padding: 3px;
+  border-bottom: 2px black solid;
+  margin-bottom: 8px;
+}
+
+h2 {
+  padding: 3px;
+  border-bottom: 1px black solid;
+  margin-bottom: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #567263;
+}
+
+th {
+  background-color: #99bfaa;
+}
+
+li {
+  margin-left: 20px;
+}
+
+p {
+  padding: 3px;
+}
+
+blockquote {
+  border-left: 3px #2d4059 solid;
+  background-color: #decdc3;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+img {
+  max-width: 20%;
+}
+/* FILES */
+.Main {
+  background: #2d4059;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  min-height: 86vh;
+}
+
+.title {
+  background: #2d4059;
+  text-align: center;
+  padding: 20px;
+  color: #decdc3;
+}
+
+.title h1 {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 752px) {
+  .Main {
+    flex-direction: column;
+  }
+
+  .editor-container {
+    margin: 0 40%;
+  }
+
+  .preview-container {
+    margin-left: 5%;
+  }
+}
+
+.editor-container {
+  margin: 0 5%;
+  min-width: 35%;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.editor {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 300px;
+  background: #9cada4;
+  padding: 5px;
+  border: 3px #decdc3 solid;
+}
+
+.editor:focus {
+  outline: none;
+}
+
+.headers {
+  font-family: "Roboto" sans-serif;
+  border: 3px #decdc3 solid;
+  border-bottom: none;
+  padding: 5px;
+  min-width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ea5455;
+}
+
+.preview-container {
+  margin-right: 5%;
+  min-width: 40%;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.preview {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 400px;
+  background: #9cada4;
+  padding: 5px;
+  border: 3px #decdc3 solid;
+  font-family: "Raleway" sans-serif;
+  color: black;
+}
+
+.footer {
+  background: #2d4059;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ea5455;
+}
+
+.footer p {
+  padding: 15px;
+}
