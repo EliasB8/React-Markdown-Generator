@@ -1,2 +1,3 @@
 # React-Markdown-Generator
-Created with CodeSandbox
+
+A markdown generator using the marked.js library.
