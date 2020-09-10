@@ -7,18 +7,21 @@ import startingText from "../startingText";
 class Main extends React.Component {
   constructor(props) {
     super(props);
+    // Initializing state
     this.state = {
       markdownText: ""
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
+  // setting default text
   componentDidMount() {
     this.setState({
       markdownText: startingText
     });
   }
 
+  // listening for input change
   handleChange(event) {
     this.setState({
       markdownText: event.target.value

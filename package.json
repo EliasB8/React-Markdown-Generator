@@ -2,12 +2,15 @@
   "name": "react",
   "version": "1.0.0",
   "description": "React example starter project",
+  "author": "Elias Ferede",
+  "homepage": "https://eliasb8.github.io/React-Markdown-Generator",
   "keywords": [
     "react",
     "starter"
   ],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "marked": "1.1.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
@@ -17,6 +20,7 @@
     "typescript": "3.8.3"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

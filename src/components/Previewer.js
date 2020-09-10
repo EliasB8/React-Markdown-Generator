@@ -1,6 +1,7 @@
 import React from "react";
 import marked from "marked";
 
+// configuring marked library
 marked.setOptions({
   gfm: true,
   breaks: true
